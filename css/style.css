@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&family=Saira+Condensed:wght@300;400;500;600;700;800&display=swap");
+
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #f7ecde;
+}
+
+  .home h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    position: relative;
+    z-index: 1;
+    
+  }
+  .home h1::before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 30%;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: .4s;
+    z-index: -1;
+  }
+  .home h1:hover::before {
+    height: 50%;
+  }
+
+
+  .bookmark-body {
+    border-color: black;
+    border-width: 3px 0;
+    border-style: dotted;
+  }
+  
+  .bookmark-body h2 {
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    color: #3ca55c;
+  }
+  .btn-submit {
+    color: white;
+    background-color: #d1512d;
+    
+  }
+  .btn-submit:hover{
+    background-color:#BB4120 ;
+    color: white;
+  }
+
+  .btn-visit {
+    color: #fff;
+    background-color: #9eb23b;
+  
+    
+}
+.btn-visit:hover{
+  color: #fff;
+  background-color: #8a9e23;
+}
+
+.btn-delete {
+  color: #fff;
+  background-color: #eb1d36;
+  
+}
+.btn-delete:hover{
+  color: #fff;
+  background-color: #d30820;
+}

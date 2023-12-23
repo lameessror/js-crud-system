@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- ===== fontawsome link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- ===== Bootstrap file ===== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- ===== Main Style sheet ===== -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="home pt-5 ">
+        <div class="container">
+            <h1 class="text-center mb-5">Bookmarker</h1>
+
+            <div class="bookmark-body w-100 d-flex flex-column justify-content-center align-items-center ">
+                <h2 class="py-4">
+                  <i class="fa-solid fa-bookmark"></i>
+                  Bookmark your favorite sites
+                  <i class="fa-solid fa-bookmark"></i>
+                </h2>
+                <div class="site-name w-100 d-flex flex-column justify-content-center">
+                  <label for="bookmarkName" class="pb-2 fw-bold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name</label>
+                  <input type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkName">
+                </div>
+                <div class="site-url w-100 d-flex flex-column justify-content-center">
+                  <label for="bookmarkURL" class="py-2 fw-bold">
+                    <i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                  <input oninput="validationURL()" type="url" placeholder="Website URL" class="form-control " id="bookmarkURL">
+                  <div class="alert alert-danger d-none" id="mesegeURL">Site URL must be a valid one</div>
+                </div>
+                <button onclick="addBookmark();" class="btn btn-submit my-4 px-5" id="submitBtn">Submit</button>
+              </div>
+              <table class="table text-center mt-3">
+                <thead>
+                  <tr><th>Index</th>
+                  <th>Website Name</th>
+                  <th>Visit</th>
+                  <th>Delete</th>
+                </tr></thead>
+                <tbody id="tableBody">
+                    <!-- <tr>
+                        <td>google</td>
+                        <td>google</td>
+                    </tr> -->
+                </tbody>
+              </table>
+        </div>
+      </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
